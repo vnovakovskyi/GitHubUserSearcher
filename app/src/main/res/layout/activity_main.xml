@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityes.MainActivity">
+
+    <EditText
+        android:id="@+id/to_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="to search"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/loadRepositories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Repositories"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/loadUserData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load user data"
+        android:gravity="center"
+        android:layout_above="@id/loadRepositories"
+        android:onClick="onClick"/>
+</RelativeLayout>
